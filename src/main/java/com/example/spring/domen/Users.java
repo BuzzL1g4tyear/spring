@@ -14,6 +14,17 @@ public class Users {
     private String login;
     private String pas;
     private String mail;
+    private String role;
+
+    public Users() {
+    }
+
+    public Users(String login, String pas, String mail, String role) {
+        this.login = login;
+        this.pas = pas;
+        this.mail = mail;
+        this.role = role ;
+    }
 
     public String getLogin() {
         return login;
@@ -46,8 +57,6 @@ public class Users {
     public void setRole(String role) {
         this.role = role;
     }
-
-    private String role;
 
     public void setId(Integer id) {
         this.id = id;
